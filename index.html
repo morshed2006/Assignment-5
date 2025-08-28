@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emergency Service</title>
+    <!-- daisyui cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- tailwind cdn-->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- font-awesome cdn -->
+<link 
+  rel="stylesheet" 
+  href="YOUR_CSS_FILE_URL_HERE" 
+  integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" 
+/>
 </head>
 <body>
-    
+     <header>
+        <nav class="flex flex-col md:flex-row justify-between items-center md:h-max-[100px] p-5 gap-4 ">
+            <div class="flex items-center ">
+                <img class="w-15 h-15" src="assets/logo.png" alt="">
+                <h1 class="font-extrabold text-xl ml-3 text-[#006747]">
+                    Emergency <br class="hidden md:block" /> Service
+                </h1>
+
+            </div>
+
+            <div class="flex items-center">
+                <div class="flex justify-center items-center bg-[#41ff6b1a] px-8 py-2 rounded-full">
+                    <span id="heart-number" class="font-extrabold mr-1">0</span>
+                    <img class="md:w-8 md:h-8" src="assets/heart.png" alt="">
+                </div>
+
+            </div>
+
+        </nav>
+     </header>
 </body>
 </html>
