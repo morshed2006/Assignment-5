@@ -31,7 +31,7 @@ for (const button of callButton) {
 			serviceNumber = card.querySelector("h1.text-3xl").innerText || "Number";
 		}
 
-		alert(Service Name: $ { serviceName } \ nCalling... $ { serviceNumber });
+		alert(Service Name : ${serviceName}\nCalling...${ serviceNumber });
 
 		let currentCoins = parseInt(coinsId.innerText, 10);
 
@@ -70,3 +70,10 @@ for (const button of callButton) {
 		}
 	});
 }
+// clear button function
+
+const clearButton = document.getElementById('clear-btn').addEventListener('click', function(){
+    historyData.length = '';
+    
+    document.getElementById('history').innerHTML = ''
+})
